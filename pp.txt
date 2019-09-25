@@ -1,0 +1,30 @@
+map f (filter p l) = filter p (map f l)
+
+map f (filter p (x:xs)) = filter p (map f (x:xs))
+
+----------------
+map f (filter p (x:xs))
+map (p x:f  filter p xs))
+
+map f (p x) : map f (filter p xs)
+
+
+
+
+filter p (map f (x:xs))
+p f x : filter p (map f xs) 
+
+
+BASE CASE:
+
+[1,2,4]
+
+p = even
+
+f = +1
+
+
+
+map f(p x)
+
+p (map f x) = p (f x)
