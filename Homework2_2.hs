@@ -40,7 +40,7 @@ ourTree = Node 51 (Node 10 Empty Empty) (Node 17 (Node 8 Empty Empty) (Node 42 E
 
 -- 2.2 (b)
 treeRow :: Int -> Tree a -> [a]
-treeRow (Node a left right) 0 = [a]
+treeRow 0 (Node a left right) = [a]
 treeRow n Empty = []
 treeRow n (Node a left right) = treeRow (n-1) left ++ treeRow (n-1) right
 
